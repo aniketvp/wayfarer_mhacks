@@ -9,4 +9,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="wayfarer.mhacks.com.wayfarer.Map">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editLocation"
+        android:hint="location"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get map"
+        android:id="@+id/button"
+        android:layout_marginTop="60dp"
+        android:onClick="map"
+        android:radius="10dp"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:textAllCaps="false"
+        android:textSize="42sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@+id/editLocation"/>
+
+
+
 </RelativeLayout>
